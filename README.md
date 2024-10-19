@@ -33,7 +33,7 @@ srun --mpi=pmi2 torchrun --nnodes=1 --nproc_per_node=8 --master_port=29125 train
 --global-mapper-path path-to-elite-global-model
 ```
 
-###stage 2:
+### stage 2:
 ```bash
 srun --mpi=pmi2 torchrun --nnodes=1 --nproc_per_node=8 --master_port=29125 train_stage2.py \
 --model TAVU \
